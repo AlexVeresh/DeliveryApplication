@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/homescreen"
+    app:startDestination="@id/restaurantsListFragment">
+
+    <fragment
+        android:id="@+id/restaurantsListFragment"
+        android:name="com.app.deliveryapplication.ui.homescreen.RestaurantsListFragment"
+        android:label="RestaurantsListFragment"
+        tools:layout="@layout/home_page_fragment">
+        <action
+            android:id="@+id/action_restaurantsListFragment_to_categoriesFragment"
+            app:destination="@id/categoriesFragment" />
+        <action
+            android:id="@+id/action_restaurantsListFragment_to_restaurantInformationFragment"
+            app:destination="@id/restaurantInformationFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/categoriesFragment"
+        android:name="com.app.deliveryapplication.ui.homescreen.CategoriesFragment"
+        android:label="CategoriesFragment"
+        tools:layout="@layout/categories_fragment">
+        <action
+            android:id="@+id/action_categoriesFragment_to_productsFragment"
+            app:destination="@id/productsFragment" />
+        <action
+            android:id="@+id/action_categoriesFragment_to_promoProductsFragment"
+            app:destination="@id/promoProductsFragment" />
+        <action
+            android:id="@+id/action_categoriesFragment_to_productInformationFragment"
+            app:destination="@id/productInformationFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/productsFragment"
+        android:name="com.app.deliveryapplication.ui.homescreen.ProductsFragment"
+        android:label="ProductsFragment"
+        tools:layout="@layout/products_fragment">
+        <action
+            android:id="@+id/action_productsFragment_to_productInformationFragment"
+            app:destination="@id/productInformationFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/productInformationFragment"
+        android:name="com.app.deliveryapplication.ui.homescreen.ProductInformationFragment"
+        android:label="ProductInformationFragment"
+        tools:layout="@layout/product_info_fragment"
+        />
+    <fragment
+        android:id="@+id/restaurantInformationFragment"
+        android:name="com.app.deliveryapplication.ui.homescreen.RestaurantInformationFragment"
+        android:label="RestaurantInformationFragment"
+        tools:layout="@layout/restaurant_information_fragment"/>
+    <fragment
+        android:id="@+id/promoProductsFragment"
+        android:name="com.app.deliveryapplication.ui.homescreen.PromoProductsFragment"
+        android:label="PromoProductsFragment" >
+        <action
+            android:id="@+id/action_promoProductsFragment_to_productInformationFragment"
+            app:destination="@id/productInformationFragment" />
+    </fragment>
+</navigation>

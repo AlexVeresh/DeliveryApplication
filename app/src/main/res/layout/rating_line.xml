@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal">
+
+    <View
+        android:id="@+id/view"
+        android:layout_width="12dp"
+        android:layout_height="11.5dp"
+        android:layout_marginEnd="3dp"
+        android:layout_marginTop="3.26dp"
+        android:layout_weight="1"
+        android:background="@drawable/ic_star" />
+
+    <TextView
+        android:id="@+id/restaurant_item_rating"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="6dp"
+        android:layout_weight="1"
+        android:fontFamily="@font/roboto"
+        android:text="4.9"
+        android:textColor="#FEE500" />
+
+    <View
+        android:id="@+id/view3"
+        android:layout_width="12dp"
+        android:layout_height="12dp"
+        android:layout_marginEnd="4dp"
+        android:layout_marginTop="3.26dp"
+        android:layout_weight="1"
+        android:background="@drawable/ic_burger" />
+
+    <View
+        android:id="@+id/view6"
+        android:layout_width="12dp"
+        android:layout_height="12dp"
+        android:layout_marginTop="3.26dp"
+        android:layout_weight="1"
+        android:background="@drawable/ic_steak" />
+</LinearLayout>

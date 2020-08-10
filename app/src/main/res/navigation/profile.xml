@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto" android:id="@+id/profile"
+    xmlns:tools="http://schemas.android.com/tools"
+    app:startDestination="@id/profileFragment">
+
+    <fragment
+        android:id="@+id/profileFragment"
+        android:name="com.app.deliveryapplication.ui.profile.ProfileFragment"
+        android:label="ProfileFragment"
+        tools:layout="@layout/profile_fragment"
+        >
+        <action
+            android:id="@+id/action_profileFragment_to_orderHistoryFragment"
+            app:destination="@id/orderHistoryFragment" />
+        <action
+            android:id="@+id/action_profileFragment_to_userAddressFragment"
+            app:destination="@id/userAddressFragment" />
+        <action
+            android:id="@+id/action_profileFragment_to_paymentWaysFragment"
+            app:destination="@id/paymentWaysFragment" />
+        <action
+            android:id="@+id/action_profileFragment_to_userPromoFragment"
+            app:destination="@id/userPromoFragment" />
+        <action
+            android:id="@+id/action_profileFragment_to_specialsFragment"
+            app:destination="@id/specialsFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/orderHistoryFragment"
+        android:name="com.app.deliveryapplication.ui.profile.OrderHistoryFragment"
+        android:label="OrderHistoryFragment" />
+    <fragment
+        android:id="@+id/userAddressFragment"
+        android:name="com.app.deliveryapplication.ui.profile.UserAddressFragment"
+        android:label="UserAddressFragment" />
+    <fragment
+        android:id="@+id/paymentWaysFragment"
+        android:name="com.app.deliveryapplication.ui.profile.PaymentWaysFragment"
+        android:label="PaymentWaysFragment" />
+    <fragment
+        android:id="@+id/specialsFragment"
+        android:name="com.app.deliveryapplication.ui.profile.SpecialsFragment"
+        android:label="SpecialsFragment" />
+    <fragment
+        android:id="@+id/userPromoFragment"
+        android:name="com.app.deliveryapplication.ui.profile.UserPromoFragment"
+        android:label="UserPromoFragment" />
+</navigation>

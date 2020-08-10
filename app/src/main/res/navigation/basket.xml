@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/basket"
+    app:startDestination="@id/basketFragment">
+
+    <fragment
+        android:id="@+id/basketFragment"
+        android:name="com.app.deliveryapplication.ui.basket.BasketFragment"
+        android:label="BasketFragment"
+        tools:layout="@layout/basket_fragment">
+        <action
+            android:id="@+id/action_basketFragment_to_addressFragment"
+            app:destination="@id/addressFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/addressFragment"
+        android:name="com.app.deliveryapplication.ui.basket.AddressFragment"
+        android:label="AddressFragment"
+        tools:layout="@layout/address_fragment"/>
+</navigation>

@@ -1,0 +1,36 @@
+<resources>
+    <string name="app_name">DeliveryApplication</string>
+    <string name="delivery_time">Доставим за 30 минут</string>
+    <string name="products">Продукты</string>
+    <string name="order_history">История заказов</string>
+    <string name="my_address">Мой адрес</string>
+    <string name="payment">Способ оплаты</string>
+    <string name="special">Избранное</string>
+    <string name="my_promo">Мои промокоды</string>
+    <string name="contact_support">Связаться с поддержкой</string>
+    <string name="add_to_basket">Добавить в корзину</string>
+    <string name="currency">%s руб.</string>
+    <string name="restaurants">Рестораны</string>
+    <string name="promo">Акции и скидки</string>
+    <string name="basket">Корзина</string>
+    <string name="search">Поиск</string>
+    <string name="profile">Профиль</string>
+    <string name="promo_text_example">Скидка 30% на первый заказ</string>
+    <string name="testapp30">TESTAPP30</string>
+    <string name="restaurant_price_holder">Заказ от %s ₽</string>
+    <string name="second_offering_text">Два по цене одного "\n" Только в феврале</string>
+    <string name="price_placeholder">%s ₽</string>
+    <string name="weight_placeholder">%s г</string>
+    <string name="delivery_time_placeholder">Доставка %s мин</string>
+    <string name="make_order_btn_title">Оформить заказ за %s ₽</string>
+    <string name="delivery_address">Адрес доставки</string>
+    <string name="alert_dialog_title">Очистить корзину ?</string>
+    <string name="order_number_title">Заказ №%s</string>
+    <string name="order_price_title">сумма</string>
+    <string name="alert_orders_dialog_title">Добавить в корзину ?</string>
+    <string name="promo_products_title">Товары со скидкой</string>
+    <string name="show_promo_products_title">Показать все</string>
+    <string name="load_error_message">Ошибка загрузки</string>
+    <string name="retry_btn_title">Повторить</string>
+    <string name="connection_error_msg">Проблемы с подключением к сети</string>
+</resources>
